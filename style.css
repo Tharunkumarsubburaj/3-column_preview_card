@@ -1,0 +1,95 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.sedan{
+    background-color: orange;
+    border-radius: 10px 0 0 10px;
+    max-width: 15rem;
+    padding: 40px;
+}
+.suv{
+    background-color:rgb(38, 146, 142);
+    max-width: 15rem;
+    padding: 40px;
+
+}
+.luxury{
+    background-color: rgb(14, 63, 52);
+    border-radius:0 10px 10px 0;
+    max-width: 15rem;
+    padding: 40px;
+
+}
+.btn{
+    border-radius: 28px;
+    background-color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+}
+.sedbtn{
+    border: none;
+    color:  orange;
+}
+.suvbtn{
+    border: none;
+    color: rgb(38, 146, 142);
+}
+.luxbtn{
+    border: none;
+    color:rgb(14, 63, 52);
+}
+h1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+p{
+    font-size: 18px;
+    height: 150px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+input{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.sedbtn:hover{
+    background-color:orange ;
+    color: white;
+    border: solid 2px white;
+}
+.suvbtn:hover{
+    background-color:rgb(38, 146, 142);
+    color: white;
+    border: solid 2px white;
+}
+.luxbtn:hover{
+    background-color:rgb(14, 63, 52);
+    color: white;
+    border: solid 2px white;
+}
+@media (max-width:654px) and (min-width:320px){
+    .sedan{
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury{
+        border-radius:0 0 10px 10px ;
+    }
+}
+@media (max-width:975px) and (min-width:656px){
+    .sedan{
+        border-radius: 10px 0 0 10px;
+    }
+    .suv{
+        border-radius: 0 10px 10px 0 ;
+    }
+    .luxury{
+        border-radius: 10px;
+    }
+}
